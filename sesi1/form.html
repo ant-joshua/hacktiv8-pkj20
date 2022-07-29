@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Form</title>
+    <style>
+        html{
+            font-size: 16px;
+            font-family: "Roboto", sans-serif;
+        }
+        .mb-1{
+            margin-bottom: 0.5rem;
+        }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <form id="form">
+        <div class="mb-1">
+          <label for="name">Fullname</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Please input your name"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Please input your email"
+          />
+        </div>
+        <div class="mb-1">
+          <label>Gender</label>
+          <div>
+            <label>Male</label>
+            <input type="radio" name="gender" value="Male" />
+          </div>
+          <div>
+            <label>Female</label>
+            <input type="radio" name="gender" value="Female" />
+          </div>
+        </div>
+        <div class="mb-1">
+          <label>Education</label>
+          <select>
+            <option>Junior Highschool</option>
+            <option>Highschool</option>
+            <option>Bachelor</option>
+          </select>
+        </div>
+        <div class="mb-1">
+          <label>Address</label>
+          <textarea></textarea>
+        </div>
+        <div class="mb-1">
+          <label>Your Website</label>
+          <input type="url" name="website" />
+        </div>
+        <div class="mb-1">
+          <label>Hobbies</label>
+          <div>
+            <label>Swimming</label>
+            <input type="checkbox" name="hobbies" value="Swimming" />
+          </div>
+          <div>
+            <label>Reading</label>
+            <input type="checkbox" name="hobbies" value="Reading" />
+          </div>
+        </div>
+        <div class="mb-1">
+          <label>Birthdate</label>
+          <input type="date" name="birthdate" />
+        </div>
+        <div class="mb-1">
+          <label>Password</label>
+          <input type="password" name="password" />
+        </div>
+        <div class="mb-1">
+          <label>Favorite Color</label>
+          <input type="color" name="color" />
+        </div>
+        <div class="mb-1">
+          <label>Phone Number</label>
+          <input type="tel" name="phone_number" />
+        </div>
+        <div class="mb-1">
+          <label>CV</label>
+          <input type="file" name="file" />
+        </div>
+
+        <div>
+          <input type="submit" value="Submit Data" />
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
